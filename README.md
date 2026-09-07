@@ -25,51 +25,45 @@ This is my collection of coursework, experiments, and prototypes—with the meth
 ## Selected projects
 
 <table>
-<tr>
-<td width="43%">
-<a href="https://github.com/MAlazmii/2D-Convolution-SIFT-FeatureMatching"><img src="assets/feature-matches.png" alt="Saved feature-matching output connecting corresponding points between photographs" width="100%"></a>
-<sub>Original saved notebook output</sub>
-</td>
-<td>
+<tr><td>
 <sub>01 / COMPUTER VISION</sub>
 <h3><a href="https://github.com/MAlazmii/2D-Convolution-SIFT-FeatureMatching">From pixels to correspondences</a></h3>
 <p>Custom image filters, ORB keypoints, and SIFT/ORB matching: exploring how local image structure becomes a set of correspondences.</p>
 <p><b>Python · OpenCV · NumPy</b></p>
 <a href="https://github.com/MAlazmii/2D-Convolution-SIFT-FeatureMatching">Notebooks &amp; visual results →</a>
-</td>
-</tr>
+<p align="center">
+<a href="https://github.com/MAlazmii/2D-Convolution-SIFT-FeatureMatching"><img src="assets/feature-matches.png" alt="Saved feature-matching output connecting corresponding points between photographs" width="600"></a>
+<sub>Original saved notebook output</sub>
+</p>
+</td></tr>
 </table>
 
 <table>
-<tr>
-<td width="43%">
-<a href="https://github.com/MAlazmii/roboticSimulationDevelopedIn-Webots"><img src="assets/webots-world.jpg" alt="Pioneer robot and obstacles in the project's Webots arena" width="100%"></a>
-<sub>Original project screenshot</sub>
-</td>
-<td>
+<tr><td>
 <sub>02 / ROBOTICS</sub>
 <h3><a href="https://github.com/MAlazmii/roboticSimulationDevelopedIn-Webots">Finding a way through</a></h3>
 <p>A Pioneer 3-DX connects sonar readings to movement through goal seeking and wall following, built on a laboratory teaching scaffold.</p>
 <p><b>Java · Webots · Reactive control</b></p>
 <a href="https://github.com/MAlazmii/roboticSimulationDevelopedIn-Webots">Controller &amp; setup →</a>
-</td>
-</tr>
+<p align="center">
+<a href="https://github.com/MAlazmii/roboticSimulationDevelopedIn-Webots"><img src="assets/webots-world.jpg" alt="Pioneer robot and obstacles in the project's Webots arena" width="600"></a>
+<sub>Original project screenshot</sub>
+</p>
+</td></tr>
 </table>
 
 <table>
-<tr>
-<td width="43%">
-<a href="https://github.com/MAlazmii/Clustering-Algorithms"><img src="assets/clustering-demo.svg" alt="K-means assignments and learned centroids on deterministic synthetic two-dimensional data" width="100%"></a>
-<sub>Synthetic demonstration using the repository's k-means implementation</sub>
-</td>
-<td>
+<tr><td>
 <sub>03 / MACHINE LEARNING</sub>
 <h3><a href="https://github.com/MAlazmii/Clustering-Algorithms">Discovering structure in data</a></h3>
 <p>NumPy implementations of k-means, k-means++ initialization, and bisecting k-means, with silhouette evaluation and synthetic-data experiments.</p>
 <p><b>Python · NumPy · Unsupervised learning</b></p>
 <a href="https://github.com/MAlazmii/Clustering-Algorithms">Algorithms &amp; experiments →</a>
-</td>
-</tr>
+<p align="center">
+<a href="https://github.com/MAlazmii/Clustering-Algorithms"><img src="assets/clustering-demo.svg" alt="K-means assignments and learned centroids on deterministic synthetic two-dimensional data" width="600"></a>
+<sub>Synthetic demonstration using the repository's k-means implementation</sub>
+</p>
+</td></tr>
 </table>
 
 ## Also in the lab
