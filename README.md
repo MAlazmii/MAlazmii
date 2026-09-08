@@ -83,6 +83,19 @@ Historical notebook output, not a new training run. [Read the experiment's scope
 - **[Sales prediction prototype](https://github.com/MAlazmii/Walmart-Sales-prediction-project)** — a Flask interface connecting model inference to CSV-backed inventory charts.
 - **[Geometric GUI](https://github.com/MAlazmii/GUI-Application)** — a small C# application for drawing lines and finding their intersections.
 
+## Apps and algorithms
+
+- **[Campus and mural map](https://github.com/MAlazmii/UOL_Map)** — a Swift coursework app exploring maps, location, and saved favourites.
+- **[Wheel of Fortune](https://github.com/MAlazmii/Swift-WheelofFortune)** — a UIKit word game with phrase categories and scoring.
+- **[Data cleaning](https://github.com/MAlazmii/Data_Processing)** — a JavaScript exercise in validating and normalizing CSV records.
+- **[Square grouping](https://github.com/MAlazmii/Square-Grouping-problem)** — dynamic programming for partitioning a sequence into consecutive groups.
+
+## Programming foundations
+
+Coursework and smaller exercises are grouped by language, with original source credits and setup notes in each collection.
+
+[Java](https://github.com/MAlazmii/java-programming) · [C](https://github.com/MAlazmii/c-programming) · [Haskell](https://github.com/MAlazmii/haskell-programming) · [Web fundamentals](https://github.com/MAlazmii/web-fundamentals) · [Swift examples](https://github.com/MAlazmii/swift_laps)
+
 ---
 
 <p align="center"><b>Perception. Behavior. Computation.</b><br>Different projects, connected by curiosity about how systems work.</p>
