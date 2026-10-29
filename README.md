@@ -3,7 +3,7 @@
   <img src="assets/studio-header.svg" alt="M Alazmi — Computational Studio. From mathematical ideas to computational experiments." width="100%">
 </picture>
 
-### Hi, I'm M Alazmi.
+### Hi, I'm Mohammed Alazmi.
 
 I explore **machine learning, computer vision, and simulation** through code. I'm interested in the connection between mathematical ideas and systems we can see in action: recognizing patterns, navigating obstacles, and modelling how signals travel.
 
