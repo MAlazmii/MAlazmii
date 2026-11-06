@@ -18,3 +18,8 @@ The notebook figures added to individual project READMEs are separate: those are
 - Technology logos come from [Devicon](https://github.com/devicons/devicon), under the MIT license preserved in `assets/tech/LICENSE`. The surrounding badge layout was created for this profile. These identify technologies used in the projects; they are not proficiency scores.
 
 The live profile uses the header, project images, and technology badges. The older conceptual chapter illustrations remain in the local studio archive.
+
+## HPC and GPU results
+
+- `heat-diffusion.png` is the actual serial sine-mode output from [Heat MPI](https://github.com/MAlazmii/heat-mpi), comparing step 0 with step 2,000 at one fixed temperature scale. Reproduce using its `scripts/plot_field.py`; this is a numerical illustration, not a scaling benchmark.
+- `gpu-reduction-a100.png` is generated from the curated [A100 measurement record](https://github.com/MAlazmii/gpu-reduction/blob/main/results/a100-validation.json) by that repository's `scripts/plot_results.py`. It shows all five repetitions and their medians/min–max ranges. The host CPU model and clock/contention controls were not captured; no peak-performance or general speedup claim is made. Both projects are independently implemented and MIT licensed.

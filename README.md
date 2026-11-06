@@ -5,9 +5,9 @@
 
 ### Hi, I'm Mohammed Alazmi.
 
-I explore **machine learning, computer vision, and simulation** through code. I'm interested in the connection between mathematical ideas and systems we can see in action: recognizing patterns, navigating obstacles, and modelling how signals travel.
+I explore **high-performance computing, GPU programming, and scientific software**, with supporting work in machine learning and computer vision. I build small, reproducible experiments to understand numerical methods, parallel execution, and the cost of moving data.
 
-This is my collection of coursework, experiments, and prototypes—with the methods, outputs, and reproduction notes alongside the code.
+Start with **Heat MPI** and **GPU Reduction** below: independent projects with correctness checks, recorded validation, and reproducible results. Earlier coursework and prototypes remain as supporting work, with their scope and source credits stated.
 
 **[Explore the projects ↓](#selected-projects)** &nbsp; · &nbsp; [Browse all repositories](https://github.com/MAlazmii?tab=repositories)
 
@@ -26,7 +26,35 @@ This is my collection of coursework, experiments, and prototypes—with the meth
 
 <table>
 <tr><td>
-<sub>01 / COMPUTER VISION</sub>
+<sub>01 / PARALLEL COMPUTING</sub>
+<h3><a href="https://github.com/MAlazmii/heat-mpi">Heat MPI — making diffusion visible</a></h3>
+<p>A 2-D heat solver with a serial reference and distributed MPI implementation. Analytical checks and complete-field comparisons establish correctness; Linux validation covers Open MPI and MPICH.</p>
+<p><b>C · MPI · Numerical methods</b></p>
+<a href="https://github.com/MAlazmii/heat-mpi">Code, validation &amp; reproduction →</a>
+<p align="center">
+<a href="https://github.com/MAlazmii/heat-mpi"><img src="assets/heat-diffusion.png" alt="Actual heat solver output at the initial state and after 2,000 steps, using one temperature scale" width="760"></a><br>
+<sub>Actual serial solver output. Multi-node performance has not been measured.</sub>
+</p>
+</td></tr>
+</table>
+
+<table>
+<tr><td>
+<sub>02 / GPU COMPUTING</sub>
+<h3><a href="https://github.com/MAlazmii/gpu-reduction">GPU Reduction — transfers change the picture</a></h3>
+<p>A C++/CUDA reduction study separating resident GPU work from transfer-inclusive time. Correctness and Compute Sanitizer checks passed on an A100; CPU builds are checked with GCC and Clang.</p>
+<p><b>C++17 · CUDA · Measurement and validation</b></p>
+<a href="https://github.com/MAlazmii/gpu-reduction">Code, recorded measurements &amp; methodology →</a>
+<p align="center">
+<a href="https://github.com/MAlazmii/gpu-reduction"><img src="assets/gpu-reduction-a100.png" alt="A100 timing chart showing five repetitions, medians and ranges for a single-thread CPU reference, resident GPU work and GPU work with transfers" width="760"></a><br>
+<sub>Measured timings from one A100 run. Logarithmic scale; no general speedup claim.</sub>
+</p>
+</td></tr>
+</table>
+
+<table>
+<tr><td>
+<sub>03 / COMPUTER VISION</sub>
 <h3><a href="https://github.com/MAlazmii/2D-Convolution-SIFT-FeatureMatching">From pixels to correspondences</a></h3>
 <p>Custom image filters, ORB keypoints, and SIFT/ORB matching: exploring how local image structure becomes a set of correspondences.</p>
 <p><b>Python · OpenCV · NumPy</b></p>
@@ -40,7 +68,7 @@ This is my collection of coursework, experiments, and prototypes—with the meth
 
 <table>
 <tr><td>
-<sub>02 / ROBOTICS</sub>
+<sub>04 / ROBOTICS</sub>
 <h3><a href="https://github.com/MAlazmii/roboticSimulationDevelopedIn-Webots">Finding a way through</a></h3>
 <p>A Pioneer 3-DX connects sonar readings to movement through goal seeking and wall following, built on a laboratory teaching scaffold.</p>
 <p><b>Java · Webots · Reactive control</b></p>
@@ -54,7 +82,7 @@ This is my collection of coursework, experiments, and prototypes—with the meth
 
 <table>
 <tr><td>
-<sub>03 / MACHINE LEARNING</sub>
+<sub>05 / MACHINE LEARNING</sub>
 <h3><a href="https://github.com/MAlazmii/Clustering-Algorithms">Discovering structure in data</a></h3>
 <p>NumPy implementations of k-means, k-means++ initialization, and bisecting k-means, with silhouette evaluation and synthetic-data experiments.</p>
 <p><b>Python · NumPy · Unsupervised learning</b></p>
@@ -98,6 +126,6 @@ Coursework and smaller exercises are grouped by language, with original source c
 
 ---
 
-<p align="center"><b>Perception. Behavior. Computation.</b><br>Different projects, connected by curiosity about how systems work.</p>
+<p align="center"><b>Model. Validate. Measure.</b><br>Different projects, connected by curiosity about how systems work.</p>
 
 <p align="center"><sub><a href="ARTWORK.md">Artwork &amp; image credits</a> · Animation respects reduced-motion preferences</sub></p>
