@@ -7,7 +7,7 @@
 
 I explore **high-performance computing, GPU programming, and scientific software**, with supporting work in machine learning and computer vision. I build small, reproducible experiments to understand numerical methods, parallel execution, and the cost of moving data.
 
-Start with **Heat MPI** and **GPU Reduction** below: independent projects with correctness checks, recorded validation, and reproducible results. Earlier coursework and prototypes remain as supporting work, with their scope and source credits stated.
+Start with **Heat MPI**, **GPU Reduction** and **Clustering Study** below: independent projects with correctness checks, recorded validation, and reproducible results. Earlier coursework and prototypes remain as supporting work, with their scope and source credits stated.
 
 **[Explore the projects ↓](#selected-projects)** &nbsp; · &nbsp; [Browse all repositories](https://github.com/MAlazmii?tab=repositories)
 
@@ -54,7 +54,28 @@ Start with **Heat MPI** and **GPU Reduction** below: independent projects with c
 
 <table>
 <tr><td>
-<sub>03 / COMPUTER VISION</sub>
+<sub>03 / MACHINE LEARNING</sub>
+<h3><a href="https://github.com/MAlazmii/clustering-study">Clustering Study — geometry and starting points matter</a></h3>
+<p>An independent NumPy study of random-start k-means, k-means++ and bisecting k-means. All 225 planned fits are recorded, with numerical checks, identical-start library comparisons and repeatable Linux validation.</p>
+<p><b>Python · NumPy · Reproducible experiments</b></p>
+<a href="https://github.com/MAlazmii/clustering-study">Algorithms, evidence &amp; reproduction →</a>
+<p align="center">
+<a href="https://github.com/MAlazmii/clustering-study"><img src="assets/clustering-study-geometry.png" alt="Three generated geometries with their generating groups above and measured k-means++ assignments below, using fixed seeds" width="760"></a><br>
+<sub>Actual CPU results on generated data, using fixed seeds. Colors identify groups within each panel.</sub>
+</p>
+<details>
+<summary>See the results across every planned seed</summary>
+<p align="center">
+<a href="https://github.com/MAlazmii/clustering-study"><img src="assets/clustering-study-quality.png" alt="Adjusted Rand and silhouette scores for all 225 fits, with every fit, median, interquartile range and minimum–maximum range shown" width="760"></a><br>
+<sub>Five dataset seeds × five initialization seeds per method and geometry. Synthetic-data measurements, not real-world accuracy estimates or confidence intervals.</sub>
+</p>
+</details>
+</td></tr>
+</table>
+
+<table>
+<tr><td>
+<sub>04 / COMPUTER VISION</sub>
 <h3><a href="https://github.com/MAlazmii/2D-Convolution-SIFT-FeatureMatching">From pixels to correspondences</a></h3>
 <p>Custom image filters, ORB keypoints, and SIFT/ORB matching: exploring how local image structure becomes a set of correspondences.</p>
 <p><b>Python · OpenCV · NumPy</b></p>
@@ -68,7 +89,7 @@ Start with **Heat MPI** and **GPU Reduction** below: independent projects with c
 
 <table>
 <tr><td>
-<sub>04 / ROBOTICS</sub>
+<sub>05 / ROBOTICS</sub>
 <h3><a href="https://github.com/MAlazmii/roboticSimulationDevelopedIn-Webots">Finding a way through</a></h3>
 <p>A Pioneer 3-DX connects sonar readings to movement through goal seeking and wall following, built on a laboratory teaching scaffold.</p>
 <p><b>Java · Webots · Reactive control</b></p>
@@ -76,20 +97,6 @@ Start with **Heat MPI** and **GPU Reduction** below: independent projects with c
 <p align="center">
 <a href="https://github.com/MAlazmii/roboticSimulationDevelopedIn-Webots"><img src="assets/webots-world.jpg" alt="Pioneer robot and obstacles in the project's Webots arena" width="600"></a>
 <sub>Original project screenshot</sub>
-</p>
-</td></tr>
-</table>
-
-<table>
-<tr><td>
-<sub>05 / MACHINE LEARNING</sub>
-<h3><a href="https://github.com/MAlazmii/Clustering-Algorithms">Discovering structure in data</a></h3>
-<p>NumPy implementations of k-means, k-means++ initialization, and bisecting k-means, with silhouette evaluation and synthetic-data experiments.</p>
-<p><b>Python · NumPy · Unsupervised learning</b></p>
-<a href="https://github.com/MAlazmii/Clustering-Algorithms">Algorithms &amp; experiments →</a>
-<p align="center">
-<a href="https://github.com/MAlazmii/Clustering-Algorithms"><img src="assets/clustering-demo.svg" alt="K-means assignments and learned centroids on deterministic synthetic two-dimensional data" width="600"></a>
-<sub>Synthetic demonstration using the repository's k-means implementation</sub>
 </p>
 </td></tr>
 </table>
@@ -107,6 +114,7 @@ Historical notebook output, not a new training run. [Read the experiment's scope
 
 </details>
 
+- **[Earlier clustering coursework](https://github.com/MAlazmii/Clustering-Algorithms)** — the original learning project, kept separate from the independently implemented Clustering Study above.
 - **[Brain signal simulation](https://github.com/MAlazmii/brain_pdp)** — a C serial baseline and experimental MPI work for signal propagation through neuron-and-nerve graphs.
 - **[Sales prediction prototype](https://github.com/MAlazmii/Walmart-Sales-prediction-project)** — a Flask interface connecting model inference to CSV-backed inventory charts.
 - **[Geometric GUI](https://github.com/MAlazmii/GUI-Application)** — a small C# application for drawing lines and finding their intersections.
