@@ -7,7 +7,7 @@
 
 I explore **high-performance computing, GPU programming, and scientific software**, with supporting work in machine learning and computer vision. I build small, reproducible experiments to understand numerical methods, parallel execution, and the cost of moving data.
 
-Start with **Heat MPI**, **GPU Reduction** and **Clustering Study** below: independent projects with correctness checks, recorded validation, and reproducible results. Earlier coursework and prototypes remain as supporting work, with their scope and source credits stated.
+Start with **Heat MPI**, **GPU Reduction** and **Clustering Study** below: independent projects with correctness checks, recorded validation, and reproducible results. The [MSc performance case studies](#msc-performance-case-studies) cover CPU optimisation, OpenMP tasks and MPI scaling.
 
 **[Explore the projects ↓](#selected-projects)** &nbsp; · &nbsp; [Browse all repositories](https://github.com/MAlazmii?tab=repositories)
 
@@ -73,9 +73,55 @@ Start with **Heat MPI**, **GPU Reduction** and **Clustering Study** below: indep
 </td></tr>
 </table>
 
+### MSc performance case studies
+
 <table>
 <tr><td>
-<sub>04 / COMPUTER VISION</sub>
+<sub>04 / CPU PERFORMANCE</sub>
+<h3><a href="https://github.com/MAlazmii/nbody-performance-study">N-body Performance Study</a></h3>
+<p>A Cirrus optimisation study with a fresh comparison on an Apple M1. Across five runs per version, the median for 20 steps fell from 13.32 s to 0.78 s using the same input and compiler flags. The saved snapshots matched at 20 and 100 steps.</p>
+<p><b>C · Profiling · Loop optimisation</b></p>
+<a href="https://github.com/MAlazmii/nbody-performance-study">Case study, data &amp; method →</a>
+<p align="center">
+<a href="https://github.com/MAlazmii/nbody-performance-study/blob/main/figures/performance.png"><img src="assets/nbody-performance.png" alt="Six historical Cirrus runtimes and all ten fresh timing samples from the N-body solver comparison" width="760"></a><br>
+<sub>The local measurements cover one solver call per process. The historical chart records the reported Cirrus stages.</sub>
+</p>
+</td></tr>
+</table>
+
+<table>
+<tr><td>
+<sub>05 / SHARED-MEMORY PARALLELISM</sub>
+<h3><a href="https://github.com/MAlazmii/openmp-adaptive-quadrature">OpenMP Adaptive Quadrature</a></h3>
+<p>A recursive integration study with OpenMP tasks. On the local rebuild, the median fell from 33.95 s to 9.33 s at one versus four requested threads. The estimate differed from the analytical reference by about 1.27 × 10⁻⁴.</p>
+<p><b>C · OpenMP · Numerical integration</b></p>
+<a href="https://github.com/MAlazmii/openmp-adaptive-quadrature">Case study, data &amp; method →</a>
+<p align="center">
+<a href="https://github.com/MAlazmii/openmp-adaptive-quadrature/blob/main/figures/thread-scaling.png"><img src="assets/openmp-quadrature-timings.png" alt="Historical GNU and Intel timing series and six fresh recursive solver measurements at one and four requested threads" width="760"></a><br>
+<sub>The historical queue timings have unresolved source provenance. The saved queue prototype returned zero.</sub>
+</p>
+</td></tr>
+</table>
+
+<table>
+<tr><td>
+<sub>06 / DISTRIBUTED COMPUTING</sub>
+<h3><a href="https://github.com/MAlazmii/mpi-sandpile-study">MPI Sandpile Study</a></h3>
+<p>An ARCHER2 scaling study of a two-dimensional MPI sandpile. A temporary local build matched an independent serial reference cell for cell in all 12 checks, including runs with eight ranks.</p>
+<p><b>C · MPI · Cartesian decomposition</b></p>
+<a href="https://github.com/MAlazmii/mpi-sandpile-study">Case study, data &amp; method →</a>
+<p align="center">
+<a href="https://github.com/MAlazmii/mpi-sandpile-study/blob/main/figures/archer2-timings.png"><img src="assets/mpi-sandpile-archer2.png" alt="Fifteen archived ARCHER2 runtimes for fixed and varying grids and two node placements at 128 ranks" width="760"></a><br>
+<sub>The ARCHER2 timings cover fixed iteration counts. Both node placement runs ended above the stable height.</sub>
+</p>
+</td></tr>
+</table>
+
+### Computer vision and robotics
+
+<table>
+<tr><td>
+<sub>07 / COMPUTER VISION</sub>
 <h3><a href="https://github.com/MAlazmii/2D-Convolution-SIFT-FeatureMatching">From pixels to correspondences</a></h3>
 <p>Custom image filters, ORB keypoints, and SIFT/ORB matching: exploring how local image structure becomes a set of correspondences.</p>
 <p><b>Python · OpenCV · NumPy</b></p>
@@ -89,7 +135,7 @@ Start with **Heat MPI**, **GPU Reduction** and **Clustering Study** below: indep
 
 <table>
 <tr><td>
-<sub>05 / ROBOTICS</sub>
+<sub>08 / ROBOTICS</sub>
 <h3><a href="https://github.com/MAlazmii/roboticSimulationDevelopedIn-Webots">Finding a way through</a></h3>
 <p>A Pioneer 3-DX connects sonar readings to movement through goal seeking and wall following, built on a laboratory teaching scaffold.</p>
 <p><b>Java · Webots · Reactive control</b></p>
