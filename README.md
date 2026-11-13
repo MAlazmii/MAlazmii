@@ -7,7 +7,7 @@
 
 I explore **high-performance computing, GPU programming, and scientific software**, with supporting work in machine learning and computer vision. I build small, reproducible experiments to understand numerical methods, parallel execution, and the cost of moving data.
 
-Start with **Heat MPI**, **GPU Reduction** and **Clustering Study** below: independent projects with correctness checks, recorded validation, and reproducible results. The [MSc performance case studies](#msc-performance-case-studies) cover CPU optimisation, OpenMP tasks and MPI scaling.
+Start with **Heat MPI**, **GPU Reduction** and **Clustering Study** below: independent projects with correctness checks, recorded validation, and reproducible results. The [MSc performance case studies](#msc-performance-case-studies) cover CPU optimisation, OpenMP tasks and MPI scaling. The [MSc dissertation](#msc-dissertation) compares native HIP and OpenMP target offload.
 
 **[Explore the projects ↓](#selected-projects)** &nbsp; · &nbsp; [Browse all repositories](https://github.com/MAlazmii?tab=repositories)
 
@@ -117,11 +117,31 @@ Start with **Heat MPI**, **GPU Reduction** and **Clustering Study** below: indep
 </td></tr>
 </table>
 
+### MSc dissertation
+
+<table>
+<tr><td>
+<sub>07 / GPU PERFORMANCE RESEARCH</sub>
+<h3><a href="https://github.com/MAlazmii/cfd-gpu-dissertation">GPU acceleration of a 2D CFD stencil</a></h3>
+<p>For my MSc dissertation at the University of Edinburgh, I ported a CFD stencil to HIP and compared it with OpenMP target offload on an AMD MI210. Across 70 recorded timings, the OpenMP-to-HIP runtime ratio narrowed from 2.01× on the smallest grid to 1.03× on the largest.</p>
+<p><b>HIP · OpenMP target · ARCHER2 · Numerical validation</b></p>
+<a href="https://github.com/MAlazmii/cfd-gpu-dissertation">Case study, measurements &amp; reproduction →</a>
+<p align="center">
+<a href="https://github.com/MAlazmii/cfd-gpu-dissertation/blob/main/figures/mi210-comparison.png"><img src="assets/dissertation-mi210-comparison.png" alt="Measured MI210 iteration times across seven grid sizes, alongside modeled effective bandwidth relative to a measured Triad reference" width="760"></a><br>
+<sub>Five sequential repeats per implementation and size. Effective bandwidth uses a stencil traffic model and a separate measured Triad reference.</sub>
+</p>
+<p align="center">
+<a href="https://github.com/MAlazmii/cfd-gpu-dissertation/blob/main/figures/mi210-diagnostics.png"><img src="assets/dissertation-mi210-diagnostics.png" alt="Measured solver time by iteration count and relative runtime for nine HIP block shapes with 256 threads per block" width="760"></a><br>
+<sub>Separate iteration-count and block-shape experiments. The case study documents their timing scope and the numerical checks.</sub>
+</p>
+</td></tr>
+</table>
+
 ### Computer vision and robotics
 
 <table>
 <tr><td>
-<sub>07 / COMPUTER VISION</sub>
+<sub>08 / COMPUTER VISION</sub>
 <h3><a href="https://github.com/MAlazmii/2D-Convolution-SIFT-FeatureMatching">From pixels to correspondences</a></h3>
 <p>Custom image filters, ORB keypoints, and SIFT/ORB matching: exploring how local image structure becomes a set of correspondences.</p>
 <p><b>Python · OpenCV · NumPy</b></p>
@@ -135,7 +155,7 @@ Start with **Heat MPI**, **GPU Reduction** and **Clustering Study** below: indep
 
 <table>
 <tr><td>
-<sub>08 / ROBOTICS</sub>
+<sub>09 / ROBOTICS</sub>
 <h3><a href="https://github.com/MAlazmii/roboticSimulationDevelopedIn-Webots">Finding a way through</a></h3>
 <p>A Pioneer 3-DX connects sonar readings to movement through goal seeking and wall following, built on a laboratory teaching scaffold.</p>
 <p><b>Java · Webots · Reactive control</b></p>
