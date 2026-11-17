@@ -12,14 +12,14 @@ Start with **Heat MPI**, **GPU Reduction** and **Clustering Study** below: indep
 **[Explore the projects ↓](#selected-projects)** &nbsp; · &nbsp; [Browse all repositories](https://github.com/MAlazmii?tab=repositories)
 
 <p>
-  <img src="assets/tech/python.svg" alt="Python" height="32">
-  <img src="assets/tech/numpy.svg" alt="NumPy" height="32">
-  <img src="assets/tech/tensorflow.svg" alt="TensorFlow" height="32">
-  <img src="assets/tech/opencv.svg" alt="OpenCV" height="32">
-  <img src="assets/tech/java.svg" alt="Java" height="32">
-  <img src="assets/tech/c.svg" alt="C" height="32">
-  <img src="assets/tech/jupyter.svg" alt="Jupyter" height="32">
-  <img src="assets/tech/git.svg" alt="Git" height="32">
+  <img src="assets/tech/badges/c.svg" alt="C" height="30">
+  <img src="assets/tech/badges/cplusplus.svg" alt="C++" height="30">
+  <img src="assets/tech/badges/cuda.svg" alt="CUDA" height="30">
+  <img src="assets/tech/badges/mpi.svg" alt="MPI" height="30">
+  <img src="assets/tech/badges/openmp.svg" alt="OpenMP" height="30">
+  <img src="assets/tech/badges/linux.svg" alt="Linux" height="30">
+  <img src="assets/tech/badges/python.svg" alt="Python" height="30">
+  <img src="assets/tech/badges/git.svg" alt="Git" height="30">
 </p>
 
 ## Selected projects

@@ -15,7 +15,7 @@ The notebook figures added to individual project READMEs are separate: those are
 - `feature-matches.png` and `training-curves.png` are unchanged saved outputs from the featured computer-vision and CNN repositories. These are historical notebook results, not newly executed benchmarks. Their project READMEs document the source and limitations.
 - `webots-world.jpg` is the unchanged original project screenshot linked from the robotics repository's previous README: https://github.com/MBAalotaibi/roboticSimulationDevelopedIn-Webots/assets/76629831/39da9ed0-6dc8-46b6-8bde-7a7c27342870. The controller is based on a laboratory teaching scaffold; the profile makes no exclusive authorship claim over that scaffold.
 - `clustering-demo.svg` is an actual execution of the repository's unchanged k-means functions on deterministic synthetic data. It is explicitly not a coursework benchmark. Reproduce with `python examples/clustering_demo.py /path/to/Clustering-Algorithms/kmeans.py`; see the script for dependency and validation details.
-- Technology logos come from [Devicon](https://github.com/devicons/devicon), under the MIT license preserved in `assets/tech/LICENSE`. The surrounding badge layout was created for this profile. These identify technologies used in the projects; they are not proficiency scores.
+- Original static SVG word badges in `assets/tech/badges/` identify technologies used in the projects. Technology logos in `assets/tech/` come from [Devicon](https://github.com/devicons/devicon), under the MIT license preserved in `assets/tech/LICENSE`.
 
 The live profile uses the header, project images, and technology badges. The older conceptual chapter illustrations remain in the local studio archive.
 
